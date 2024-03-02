@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,700;0,900;1,500&display=swap');
+:root{
+    --sans: 'Red Hat Display', sans-serif;
+    --prime-light: hsl(225, 100%, 100%);
+    --prime-paler: hsl(225, 100%, 98%);
+    --prime-pale: hsl(225, 100%, 94%);
+    --prime-ntr: hsl(224, 23%, 55%);
+    --prime-bright: hsl(245, 75%, 52%);
+    --prime-bright-hover: hsl(245, 75%, 72%);
+    --prime-dark: hsl(223, 47%, 23%);
+}
+
+html, body{
+    font-family: var(--sans);
+    margin:0;
+}
+
+/* txt Color as ClassName*/
+.txt-prime-light{
+    color: var(--prime-light);
+}
+.txt-prime-pale{
+    color: var(--prime-pale);
+}
+.txt-prime-paler{
+    color: var(--prime-paler);
+}
+.txt-prime-ntr{
+    color: var(--prime-ntr);
+}
+.txt-prime-bright{
+    color: var(--prime-bright);
+}
+.txt-prime-dark{
+    color: var(--prime-dark);
+}
+
+/* Background Color as ClassName*/
+.bg-prime-light{
+    background-color: var(--prime-light);
+}
+.bg-prime-pale{
+    background-color: var(--prime-pale);
+}
+.bg-prime-paler{
+    background-color: var(--prime-paler);
+}
+.bg-prime-ntr{
+    background-color: var(--prime-ntr);
+}
+.bg-prime-bright{
+    background-color: var(--prime-bright);
+}
+.bg-prime-dark{
+    background-color: var(--prime-dark);
+}
+
+/* General classNames */
+
+.d-block{
+    display:block;
+}
+.txt-center{
+    text-align:center;
+}
+.radius{
+    border-radius: 15px;
+}
+.p-inline{
+    padding-inline:2rem;
+}
+/* Card START*/
+.container{
+    min-height:100vh;
+    overflow: hidden;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.container .card{
+    width: 375px;
+    overflow: hidden;
+}
+.container .card .card-header img{
+    width:100%;
+}
+
+.container .plans{
+    display:flex;
+    align-items: center;
+    gap:16px;
+    padding-inline: 1rem;
+}
+
+.container .plans a{
+    flex:1;
+    text-align:right;
+}
+.container .card-footer a{
+    text-decoration: none;
+    margin: 1.5rem 0;
+}
+.container .card-footer .proceedBtn{
+    padding: 1rem 0;
+    box-shadow: 0 30px 20px  var(--prime-pale);
+}
+
+/* Hover effect*/
+
+.container .plans a:hover{
+    text-decoration:none;
+    color: var(--prime-bright-hover);
+}
+
+.container .card-footer .proceedBtn:hover{
+    background-color: var(--prime-bright-hover);
+}
+
+.container .card-footer .resetBtn:hover{
+    color: var(--prime-dark);
+}
+/* Card END */ 

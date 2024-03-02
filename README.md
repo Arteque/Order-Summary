@@ -22,7 +22,7 @@ I learned how to use `display: flex` effectively.
 
 ### Screenshot
 
-![Screenshot](./screenshot.png)
+![Screenshot](./Screenshot.png)
 
 ### Links
 

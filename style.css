@@ -13,6 +13,7 @@
 html, body{
     font-family: var(--sans);
     margin:0;
+    
 }
 
 /* txt Color as ClassName*/
@@ -76,6 +77,14 @@ html, body{
     display:flex;
     align-items:center;
     justify-content:center;
+    background-image:url(./images/pattern-background-mobile.svg);
+    background-size: contain;
+    background-repeat: repeat-x;
+}
+@media screen and (min-width: 950px ){
+    .container{
+        background-image:url(./images/pattern-background-desktop.svg);
+    }
 }
 .container .card{
     width: 375px;
